@@ -8,7 +8,7 @@ import repeticijaModel from '../models/repeticijaModel.js'
 import Stripe from "stripe"
 
 import 'dotenv/config'
-//import razorpay from 'razorpay'
+
 
 //api za registraciju
 const registracijaKorisnika = async (req, res) => {
@@ -228,14 +228,7 @@ const otkaziRepeticije = async (req, res) => {
   }
 }
 
-/*const razorpayInstance = new razorpay({
-  key_id:'',
-  key_secret:'',
-})
 
-//api za plaćanje repeticija Razorpay metodom
-const placanjeRazorpay = async(req, res) => {
-}*/
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 const placanjeRepeticijaStripe = async (req, res) => {
