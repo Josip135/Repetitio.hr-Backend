@@ -308,7 +308,7 @@ const potvrdiPlacanjeStripe = async (req, res) => {
     console.log(error);
   }
 }
-//stripe listen --forward-to localhost:4000/api/korisnik/stripe-webhook
+
 
 export {
   registracijaKorisnika, loginKorisnika, getProfilKorisnika,
@@ -317,4 +317,3 @@ export {
 }
 
 
-//STRIPE_WEBHOOK_SECRET = 'whsec_b0692d4cdd5d7677dc5892bf5cb40c0932ca0eed6fbe5266cf5640e2baf6f579'
